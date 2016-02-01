@@ -1,17 +1,33 @@
 
 public class Player
 	{
-
+		String Name;				
+		int Health=100;		
+		public Player (String col, int a)
+			{
+				Name = col;						
+				Health = a;
+			}
 		public static void main(String[] args)
 			{
-				private String Name;				
-				private int Health, Armor;
-				public void Player (String col, int a, int buns)
-					{
-						Name = col;						
-						Health = a;
-						Armor = buns;
-					}
+			
 			}
-
+		public String getName()
+			{
+				return Name;
+			}
+		public void setName(String name)
+			{
+				Name = name;
+			}
+		public int getHealth()
+			{
+				return Health;
+			}
+		public void setHealth(int health)
+			{
+				Health = health;
+			}
 	}
+
+	
