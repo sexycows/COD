@@ -1,7 +1,7 @@
 
 public class Gun
 	{
-		private String name, set;
+		private String name, set; 
 		private int ammunation, speed ;
 		public Gun (String col, String cl, int a, int buns)
 			{
