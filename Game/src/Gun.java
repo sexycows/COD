@@ -1,14 +1,14 @@
 
 public class Gun
 	{
-		private String name, set; 
-		private int ammunation, speed ;
-		public Gun (String col, String cl, int a, int buns)
+		private String name; 
+		private int ammunation, speed,damage ;
+		public Gun (String col, int a, int buns,int hi)
 			{
-				name = col;
-				set = cl;
+				name = col;				
 				ammunation = a;
 				speed = buns;
+				damage=hi;
 			}
 		
 		public String getName()
@@ -18,14 +18,6 @@ public class Gun
 		public void setName(String name)
 			{
 				name = name;
-			}
-		public String getset()
-			{
-				return set;
-			}
-		public void setset(String class1)
-			{
-				set = class1;
 			}
 		public int getAmmunation()
 			{
@@ -38,10 +30,10 @@ public class Gun
 
 		public static void main(String[] args)
 		{
-			 Gun AK=new Gun  ("AK-47", "LMG",150,5);
-			 Gun Sniper=new Gun  ("AK-47", "LMG",15,15);
-			 Gun Rapid=new Gun  ("AK-47", "LMG",1000,50);
-			 Gun Spoon=new Gun  ("AK-47", "LMG",150,5);
+			 Gun AK=new Gun  ("AK-47",150,5,50);
+			 Gun Sniper=new Gun  ("Sniper",15,15,100);
+			 Gun Rapid=new Gun  ("Rapid",1000,50,5);
+			 Gun Spoon=new Gun  ("Spoon",200000000,1,9000);
 		}
 		
 	}
