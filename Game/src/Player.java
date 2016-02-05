@@ -3,11 +3,11 @@ import java.util.ArrayList;
 public class Player
 	{
 		static String playerName;				
-		static int health=100;		
+		static int health = 100;		
 		static Gun gun1;
 		
 	
-		static public void player (String col, int a, Gun b)
+		public Player (String col, int a, Gun b)
 			{
 				playerName = col;						
 				health = a;
@@ -17,16 +17,6 @@ public class Player
 			{			
 				 
 			}
-		
-		public Gun getG()
-		{
-			return gun1;
-		}
-		
-		public void setG(Gun g) 
-		{
-			this.gun1 = g;
-		}
 		
 		public String getPlayerName()
 			{
@@ -44,9 +34,21 @@ public class Player
 			{
 				health = health;
 			}
-		public static void getGun1(ArrayList<Gun> guns) {
+		
+		
+		public static Gun getGun1() 
+		{
+			return gun1;
+		}
+		public static void setGun1(Gun gun1) 
+		{
+			Player.gun1 = gun1;
+		}
+		
+		public static Player getName() 
+		{
 			// TODO Auto-generated method stub
-			
+			return null;
 		}
 		
 

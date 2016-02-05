@@ -17,7 +17,7 @@ public class Gun
 		}
 		public static void main(String[] args)
 		{
-		guns.add(new Gun("AK-47",150,5,50));
+		 guns.add(new Gun  ("AK-47",150,5,50));
 		 guns.add(new Gun  ("Sniper",15,15,100));
 		 guns.add(new Gun  ("Rapid",1000,50,5));
 		 guns.add(new Gun  ("Spoon",200000000,1,9000));
