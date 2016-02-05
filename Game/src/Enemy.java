@@ -1,32 +1,41 @@
+import java.util.ArrayList;
 
 public class Enemy
 	{
-		String Name;				
-		int Health=100;
-		
+		String enemyName;				
+		int enemyHealth;		
 		public Enemy (String col, int a)
 			{
-				Name = col;						
-				Health = a;
+				enemyName = col;						
+				enemyHealth = a;
 			}
 		public static void main(String[] args)
 			{
-			
+				ArrayList <Enemy> enemies = new ArrayList <Enemy>();
+				enemies.add (new Enemy("Manaquin",10));
+				enemies.add (new Enemy("Recruit",50));
+				enemies.add (new Enemy("Corpral",70));
+				enemies.add (new Enemy("Sargent",90));
+				enemies.add (new Enemy("Master Sargent",110));
+				enemies.add (new Enemy("Captain",130));
+				enemies.add (new Enemy("Cheif In Commander",150));		
+				System.out.println("jake");
 			}
 		public String getName()
 			{
-				return Name;
+				return enemyName;
 			}
 		public void setName(String name)
 			{
-				Name = name;
+			enemyName = enemyName;
 			}
 		public int getHealth()
 			{
-				return Health;
+				return enemyHealth;
 			}
 		public void setHealth(int health)
 			{
-				Health = health;
+			enemyHealth = enemyHealth;
 			}
+		
 	}

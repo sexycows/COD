@@ -1,33 +1,54 @@
+import java.util.ArrayList;
 
 public class Player
 	{
-		String Name;				
-		int Health=100;		
-		public Player (String col, int a)
+		static String playerName;				
+		static int health=100;		
+		static Gun gun1;
+		
+	
+		static public void player (String col, int a, Gun b)
 			{
-				Name = col;						
-				Health = a;
+				playerName = col;						
+				health = a;
+				gun1 = b;
 			}
 		public static void main(String[] args)
-			{
-			
+			{			
+				 
 			}
-		public String getName()
+		
+		public Gun getG()
+		{
+			return gun1;
+		}
+		
+		public void setG(Gun g) 
+		{
+			this.gun1 = g;
+		}
+		
+		public String getPlayerName()
 			{
-				return Name;
+				return playerName;
 			}
-		public void setName(String name)
+		public void setPlayerName(String PlayerName)
 			{
-				Name = name;
+				PlayerName = PlayerName;
 			}
 		public int getHealth()
 			{
-				return Health;
+				return health;
 			}
-		public void setHealth(int health)
+		public static void setHealth(int health)
 			{
-				Health = health;
+				health = health;
 			}
-	}
+		public static void getGun1(ArrayList<Gun> guns) {
+			// TODO Auto-generated method stub
+			
+		}
+		
 
-	
+		
+	}
