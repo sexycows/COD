@@ -4,15 +4,17 @@ public class Enemy
 	{
 		String enemyName;				
 		int enemyHealth;		
-		public Enemy (String col, int a)
+		Gun gun2;
+		public Enemy (String col, int a, Gun idk)
 			{
 				enemyName = col;						
 				enemyHealth = a;
+				gun2 = idk;
 			}
 		public static void main(String[] args)
 			{
 				ArrayList <Enemy> enemies = new ArrayList <Enemy>();
-				enemies.add (new Enemy("Manaquin",10));
+				enemies.add (new Enemy("Manaquin",10,(COD.getGuns().getSpeed())));
 				enemies.add (new Enemy("Recruit",50));
 				enemies.add (new Enemy("Corpral",70));
 				enemies.add (new Enemy("Sargent",90));

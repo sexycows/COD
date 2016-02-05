@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Player
 	{
-		static String playerName;				
-		static int health = 100;		
-		static Gun gun1;
+		 String playerName;				
+		 int health = 100;		
+		 static Gun gun1;
 		
 	
 		public Player (String col, int a, Gun b)
@@ -12,10 +12,6 @@ public class Player
 				playerName = col;						
 				health = a;
 				gun1 = b;
-			}
-		public static void main(String[] args)
-			{			
-				 
 			}
 		
 		public String getPlayerName()
@@ -30,22 +26,21 @@ public class Player
 			{
 				return health;
 			}
-		public static void setHealth(int health)
+		public  void setHealth(int health)
 			{
 				health = health;
 			}
 		
-		
-		public static Gun getGun1() 
+		public static  Gun getGun1() 
 		{
 			return gun1;
 		}
-		public static void setGun1(Gun gun1) 
+		public static  void setGun1(Gun gun1) 
 		{
 			Player.gun1 = gun1;
 		}
 		
-		public static Player getName() 
+		public  Player getName() 
 		{
 			// TODO Auto-generated method stub
 			return null;

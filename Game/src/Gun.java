@@ -2,11 +2,11 @@ import java.util.ArrayList;
 
 public class Gun
 	{
-		private static String name; 
-		private static int ammunation ;
-		private static int speed;
-		private static int damage;
-		static ArrayList <Gun> guns = new ArrayList <Gun>();
+		private  String name; 
+		private  int ammunation ;
+		private  int speed;
+		private  int damage;
+		
 		
 		public Gun (String col, int a, int buns,int hi)
 		{
@@ -15,14 +15,11 @@ public class Gun
 			speed = buns;
 			damage = hi;
 		}
-		public static void main(String[] args)
+		public  void main(String[] args)
 		{
-		 guns.add(new Gun  ("AK-47",150,5,50));
-		 guns.add(new Gun  ("Sniper",15,15,100));
-		 guns.add(new Gun  ("Rapid",1000,50,5));
-		 guns.add(new Gun  ("Spoon",200000000,1,9000));
+		
 		}
-	public static String getName()
+	public  String getName()
 	{
 		return name;
 	}
@@ -32,16 +29,7 @@ public class Gun
 		this.name = name;
 	}
 	
-	public static ArrayList<Gun> getGuns() 
-	{
-		return guns;
-	}
-	
-	public static void setGuns(ArrayList<Gun> guns)
-	{
-		Gun.guns = guns;
-	}
-	
+
 	public int getAmmunation()
 		{
 			return ammunation;
